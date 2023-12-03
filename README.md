@@ -4,8 +4,11 @@ Spotify Charts(https://charts.spotify.com/home)というサイトとSpotify API�
 
 # .envの設定
 CLIENT_ID = Spotify Developer Dashboardで取得したクライアントID
+
 CLIENT_SECRET = 同様に取得したクライアントシークレット
+
 SP_USERNAME = Spotifyアカウントのメール又はユーザーネーム
+
 SP_PASSWORD = パスワード
 
 # chromedriverの設定
