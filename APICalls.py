@@ -140,7 +140,9 @@ def get_last_thursday_in_past():
 date = get_last_thursday_in_past()
 
 cache = pd.read_csv(f'./data/weeks_{date.strftime("%Y-%m-%d")}.csv', index_col=None)
+
 #キャッシュに読み込むデータ数
+
 amountOfCache = 10
 for i in range(amountOfCache - 1):
     date = date - timedelta(7)
@@ -208,11 +210,11 @@ def getInfo(current_date: datetime, cache):
 
 num = 10
 for i in range(num):
+    date = date - timedelta(7)
     print(f'取得開始:{(date).strftime("%Y-%m-%d")}')
     #CSVに取得データを書き込むとともに、重複を避けるためにキャッシュに保存
     tmp = getInfo(date,cache)
     cache = pd.concat([cache,tmp],ignore_index=True)
     #次の一週間
     print(f'取得完了:{(date).strftime("%Y-%m-%d")}')
-    date = date - timedelta(7)
     # time.sleep(0.4)
