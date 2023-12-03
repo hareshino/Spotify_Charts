@@ -141,7 +141,7 @@ date = get_last_thursday_in_past()
 
 cache = pd.read_csv(f'./data/weeks_{date.strftime("%Y-%m-%d")}.csv', index_col=None)
 #キャッシュに読み込むデータ数
-amountOfCache = 69
+amountOfCache = 10
 for i in range(amountOfCache - 1):
     date = date - timedelta(7)
     cache2 = pd.read_csv(f'./data/weeks_{date.strftime("%Y-%m-%d")}.csv', index_col=None)
@@ -206,7 +206,7 @@ def getInfo(current_date: datetime, cache):
 
     return merged_df
 
-for i in range(30):
+for i in range(num = 10):
     print(f'取得開始:{(date).strftime("%Y-%m-%d")}')
     #CSVに取得データを書き込むとともに、重複を避けるためにキャッシュに保存
     tmp = getInfo(date,cache)
