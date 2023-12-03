@@ -1,5 +1,5 @@
 # Discription
-Spotify Charts(https://charts.spotify.com/home)というサイトとSpotify APIを利用して、
+Spotify Charts( https://charts.spotify.com/home )というサイトとSpotify APIを利用して、
 日間または週間のストリーミング数のランキング上位200の曲に関する情報(dancabilityなど)を取得するプログラム。
 
 # .envの設定
@@ -13,7 +13,7 @@ SP_PASSWORD = パスワード
 
 # chromedriverの設定
 スクレイピングの際に必要。Chrome for Testingを
-(https://googlechromelabs.github.io/chrome-for-testing/)からダウンロードして所定の位置に置く。
+ https://googlechromelabs.github.io/chrome-for-testing/ からダウンロードして所定の位置に置く。
 
 # SpotifyCharts_Scraping.py
 Spotify Chartsにログインし、指定した数だけCSVダウンロードボタンを押しまくる。
