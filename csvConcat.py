@@ -34,4 +34,4 @@ for i in range(54):
     next = 7
     date = date - timedelta(next)
 
-result.to_csv("test.csv",index=False,encoding="utf-8-sig")
+result.to_csv("result.csv",index=False,encoding="utf-8-sig")
