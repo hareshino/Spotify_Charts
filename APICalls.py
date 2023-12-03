@@ -206,7 +206,8 @@ def getInfo(current_date: datetime, cache):
 
     return merged_df
 
-for i in range(num = 10):
+num = 10
+for i in range(num):
     print(f'取得開始:{(date).strftime("%Y-%m-%d")}')
     #CSVに取得データを書き込むとともに、重複を避けるためにキャッシュに保存
     tmp = getInfo(date,cache)
