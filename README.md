@@ -23,3 +23,7 @@ SpotifyCharts_Scraping.pyで保存したCSVファイルを読み込んで、API�
 
 # csvConcat.py
 CSVファイルを結合して1つのファイルにする。
+
+#
+
+このようにして作成したデータセット:https://www.kaggle.com/datasets/miz100010/spotify-dataset-for-2022-japan-daily-top-200/settings
